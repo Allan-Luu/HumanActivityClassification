@@ -1,0 +1,19 @@
+Conda Environment Setup
+
+# Creates a new environment named capstone, with python 3.8
+conda create -n capstone python=3.8 
+
+# activates the new environment
+conda activate capstone
+
+# install required libraries in the environment
+conda install numpy=1.19.2 pandas matplotlib jupyter jupyterlab seaborn
+
+pip install --upgrade pip
+
+pip install tensorflow==2.2
+
+conda install scikit-learn=0.24.1 
+
+# create kernel for Jupyter
+ipython kernel install --name "capstone" --user
